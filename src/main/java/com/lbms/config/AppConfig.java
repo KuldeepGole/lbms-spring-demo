@@ -9,7 +9,7 @@ import org.springframework.web.servlet.view.JstlView;
 
 @EnableWebMvc
 @Configuration
-@ComponentScan({ "com.lbms.controllers.*" })
+@ComponentScan(basePackages = "com.lbms")
 public class AppConfig {
 	
 	@Bean
@@ -18,7 +18,7 @@ public class AppConfig {
 		viewResolver.setViewClass(JstlView.class);
 		viewResolver.setPrefix("/WEB-INF/pages/");
 		viewResolver.setSuffix(".jsp");
-		System.out.println("asdlkfkjaslkdfj");
+//		System.out.println("asdlkfkjaslkdfj");
 		return viewResolver;
 	}
 }

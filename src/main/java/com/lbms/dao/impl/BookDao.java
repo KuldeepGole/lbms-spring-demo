@@ -1,7 +1,7 @@
-package com.lbms.services;
+package com.lbms.dao.impl;
 
 import com.lbms.models.BookMaster;
 
-public interface BookService {
+public interface BookDao {
 	public void saveBook(BookMaster bookMaster);
 }
