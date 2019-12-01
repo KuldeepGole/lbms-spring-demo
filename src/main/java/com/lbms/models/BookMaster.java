@@ -5,6 +5,7 @@ import javax.persistence.GeneratedValue;
 import javax.persistence.GenerationType;
 import javax.persistence.Id;
 import javax.persistence.Table;
+import javax.validation.constraints.Size;  
 
 @Entity
 @Table(name = "Book_Mst")
@@ -17,6 +18,8 @@ public class BookMaster {
 	private String bookName;
 	private String bookAuther;
 	private String bookPublisher;
+	
+	@Size(min=1,message="required") 
 	private Integer bookQuantity;
 
 	public Integer getBookId() {

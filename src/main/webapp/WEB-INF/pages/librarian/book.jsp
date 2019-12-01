@@ -6,6 +6,9 @@
 <head>
 <meta charset="ISO-8859-1">
 <title>LBMS Book Page</title>
+<style>  
+.error{color:red}  
+</style>
 </head>
 <body>
 	<%@include file="/WEB-INF/pages/common/libheader.jsp"%>
@@ -35,7 +38,9 @@
 			<tr>
 				<td>Quantity</td>
 				<td>:</td>
-				<td><form:input type="text" path="bookQuantity" maxlength="5"></form:input></td>
+				<td><form:input type="text" path="bookQuantity" maxlength="5" ></form:input>
+				<form:errors path="bookQuantity" cssClass="error"/>
+				</td>
 			</tr>
 			<tr>
 				<td></td>

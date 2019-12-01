@@ -1,4 +1,4 @@
-package com.lbms.dao.impl;
+package com.lbms.dao;
 
 import com.lbms.models.BookMaster;
 
